@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: "Dashboard - Pratham shinde",
   description:
     "Dashboard created by praatham shinde using NextJs, Tailwind css, ShadCn, recharts, Typescript ...",
+  icons: {
+    icon: {
+      url: "/logo.png",
+      href: "logo.png",
+    },
+  },
 };
 
 export default function RootLayout({
