@@ -1,7 +1,9 @@
 import { cn } from "@/lib/utils";
 import {
+  CircleArrowOutDownRight,
   ClipboardCheck,
   Home,
+  LogOut,
   LucideIcon,
   ShoppingBag,
   SquareKanban,
@@ -47,6 +49,9 @@ export const Sidebar = () => {
           active={item.active}
         />
       ))}
+      <button className="absolute bottom-0 hidden md:block px-[25px] py-5 hover:bg-red-500 group/button">
+        <CircleArrowOutDownRight className="w-5 h-5 text-neutral-400 rotate-[-45deg] group-hover/button:text-white" />
+      </button>
     </div>
   );
 };
