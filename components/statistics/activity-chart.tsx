@@ -5,6 +5,7 @@ import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 import { ChartConfig, ChartContainer } from "@/components/ui/chart";
 import { useMediaQuery } from "usehooks-ts";
 import { chartData } from "./data-constants";
+import { ChevronDown } from "lucide-react";
 
 const chartConfig = {
   revenue: {
@@ -25,7 +26,13 @@ export function ActivityChart() {
 
   return (
     <div className="p-3 bg-[#202028] mt-7 rounded-md w-full">
-      <h1 className="font-bold text-2xl">Activity</h1>
+      <div className="flex justify-between">
+        <h1 className="font-bold text-2xl">Activity</h1>
+        <p className="flex items-center px-3 bg-white/20 rounded-full cursor-pointer hover:bg-white/30">
+          <span className="text-xs font-medium">Weekly</span>
+          <ChevronDown className="ml-2 w-4 h-4 shrink-0" />{" "}
+        </p>
+      </div>
       <ChartContainer
         config={chartConfig}
         className="w-full mt-7 max-h-[220px]"
