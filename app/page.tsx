@@ -8,7 +8,7 @@ const DashBoardPage = () => {
       <Navbar />
       <div className="flex flex-grow h-full w-full">
         <Sidebar />
-        <main className="flex-grow !overflow-y-auto custom-scroll-bar text-neutral-50 p-5 pb-44 md:pb-24 w-full">
+        <main className="flex-grow !overflow-y-auto custom-scroll-bar text-neutral-50 p-5 md:px-8 pb-44 md:pb-24 w-full">
           <h1 className="text-3xl font-bold">Dashboard</h1>
           <Statistics />
         </main>

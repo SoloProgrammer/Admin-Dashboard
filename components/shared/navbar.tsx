@@ -9,7 +9,7 @@ export const Navbar = () => {
     <div className="w-full flex bg-[#202028] p-3 px-4 justify-between shadow-[#00000040] shadow-md z-10">
       <div className="flex items-center">
         <Image src={Logo} alt="logo" width={45} height={45} />
-        <div className="hidden md:flex bg-[#2a2b30] ml-10 border border-gray-600 p-2 rounded-md items-center">
+        <div className="hidden md:flex bg-[#2a2b30] ml-10 border border-gray-600 p-2 py-[6px] rounded-md items-center w-[260px]">
           <Search className="w-4 h-4 text-white mr-2" />
           <input
             type="search"

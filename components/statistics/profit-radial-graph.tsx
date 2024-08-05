@@ -23,33 +23,36 @@ const chartConfig = {
 
 export function ProfitRadialGraph() {
   return (
-    <div className="bg-[#202028] rounded-md flex justify-between flex-col md:flex-row">
+    <div className="bg-[#202028] rounded-md flex justify-between flex-col md:flex-row md:pr-6">
       <div className="p-3 flex-col w-[50%] inline-block">
         <p className="text-white/80 text-xs">Net profit</p>
         <div className="mt-5">
-          <h2 className="font-black text-4xl mb-4 whitespace-nowrap">$ 6759.25</h2>
+          <h2 className="font-black text-4xl mb-4 whitespace-nowrap">
+            $ 6759.25
+          </h2>
           <span className="font-medium text-green-400">-3%</span>
         </div>
       </div>
+      <div className="relative flex justify-center">
         <ChartContainer
           config={chartConfig}
-          className="aspect-square max-h-[150px] !min-h-[150px]"
+          className="aspect-square max-h-[150px] !min-h-[150px] -translate-y-2"
         >
           <RadialBarChart
             data={chartData}
             startAngle={90}
             endAngle={-190}
-            innerRadius={50}
-            outerRadius={80}
+            innerRadius={45}
+            outerRadius={75}
           >
             <PolarGrid
               gridType="circle"
               radialLines={false}
               stroke="none"
               className="first:fill-[#7194ff]/20 last:fill-[#202028]"
-              polarRadius={[56, 44]}
+              polarRadius={[50, 38]}
             />
-            <RadialBar dataKey="visitors" background cornerRadius={10} />
+            <RadialBar dataKey="visitors" cornerRadius={10} />
             <PolarRadiusAxis tick={false} tickLine={false} axisLine={false}>
               <Label
                 content={({ viewBox }) => {
@@ -85,7 +88,10 @@ export function ProfitRadialGraph() {
             </PolarRadiusAxis>
           </RadialBarChart>
         </ChartContainer>
-      {/* </div> */}
+        <span className="absolute bottom-3 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 md:right-0 text-[8.5px] text-white/60 whitespace-nowrap">
+          *The values here has been rounded off.
+        </span>
+      </div>
     </div>
   );
 }

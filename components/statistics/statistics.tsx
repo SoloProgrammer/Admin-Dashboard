@@ -2,6 +2,7 @@ import { ActivityChart } from "./activity-chart";
 import { ActivityGrid } from "./activity-grid";
 import { ActivityTable } from "./activity-table";
 import { ExploreMore } from "./explore-more";
+import { FeedBacks } from "./feedbacks";
 import { ProfitRadialGraph } from "./profit-radial-graph";
 
 export const Statistics = () => {
@@ -12,9 +13,10 @@ export const Statistics = () => {
         <ActivityChart />
         <ActivityTable />
       </div>
-      <div className="w-full md:flex-[1] mt-7 slg:mt-0">
+      <div className="w-full md:flex-[1] mt-7 slg:mt-0 flex flex-col h-full">
         <ProfitRadialGraph/>
         <ExploreMore/>
+        <FeedBacks/>
       </div>
     </div>
   );

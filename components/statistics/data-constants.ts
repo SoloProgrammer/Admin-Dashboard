@@ -4,7 +4,7 @@ import Avatar2 from "../../public/avatar-2.png";
 import Avatar3 from "../../public/avatar-3.png";
 import Avatar4 from "../../public/avatar-4.jpg";
 
-import { Activity, ChartDto, TableDto } from "./types";
+import { Activity, ChartDto, FeedBack, TableDto } from "./types";
 import {
   CircleDollarSign,
   PackageCheck,
@@ -128,4 +128,191 @@ export const chartData: ChartDto[] = [
   { date: "2024-04-25", revenue: 7890 },
   { date: "2024-04-26", revenue: 10000 },
   { date: "2024-04-27", revenue: 8900 },
+];
+
+export const feedbacksData: FeedBack[] = [
+  {
+    review:
+      "Lovely place with a cozy atmosphere. The wine selection was impressive and the staff was knowledgeable. A great place for a date night also The ambiance was perfect and the pasta was delicious! & Great service too lorem ipsum good food!",
+    stars: 4,
+    user: {
+      name: "Grace Lee",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "The service was prompt and courteous. However, the main course lacked flavor. The dessert made up for it though.",
+    stars: 3,
+    user: {
+      name: "Frank White",
+      avatar: Avatar1,
+    },
+  },
+  {
+    review: "The ambiance was perfect and the pasta was delicious!",
+    stars: 5,
+    user: {
+      name: "Alice Johnson",
+      avatar: Avatar1,
+    },
+  },
+  {
+    review: "Great service, but the steak was a bit overcooked.",
+    stars: 3,
+    user: {
+      name: "Bob Smith",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Had a wonderful evening here. The live music added a special touch. The menu had a lot of variety and everything we tried was great.",
+    stars: 4,
+    user: {
+      name: "Isabel Martinez",
+      avatar: Avatar4,
+    },
+  },
+  {
+    review: "Absolutely loved the desserts. Will visit again!",
+    stars: 5,
+    user: {
+      name: "Charlie Brown",
+      avatar: Avatar3,
+    },
+  },
+  {
+    review: "Good food but the wait time was too long.",
+    stars: 3,
+    user: {
+      name: "Diana Ross",
+      avatar: Avatar4,
+    },
+  },
+  {
+    review: "The seafood platter was fantastic. Highly recommend!",
+    stars: 4,
+    user: {
+      name: "Eve Adams",
+      avatar: Avatar,
+    },
+  },
+  {
+    review:
+      "The food quality has improved since my last visit. The appetizers were fresh and the main course was cooked to perfection. Kudos to the chef!",
+    stars: 5,
+    user: {
+      name: "Henry King",
+      avatar: Avatar3,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
+  {
+    review:
+      "Nice decor and friendly staff, but the food was average. Expected more for the price. Probably won't be back soon.",
+    stars: 2,
+    user: {
+      name: "Jack Roberts",
+      avatar: Avatar2,
+    },
+  },
 ];

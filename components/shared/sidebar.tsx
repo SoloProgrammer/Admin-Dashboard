@@ -63,7 +63,7 @@ const Item = ({ icon: Icon, title, active }: ItemProps) => {
       aria-description={title}
       title={title}
       className={cn(
-        "relative px-6 py-5 cursor-pointer hover:bg-[#7294ff]/10",
+        "relative px-6 py-5 cursor-pointer hover:bg-[#2c2c37]",
         active &&
           "before:absolute before:w-full before:h-[6px] before:md:w-1 before:md:h-[60%] before:rounded-full before:bg-[#7294ff]  before:left-0 before:md:top-1/2 before:md:-translate-y-1/2 before:bottom-0"
       )}

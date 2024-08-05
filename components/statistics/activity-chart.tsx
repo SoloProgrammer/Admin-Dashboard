@@ -17,7 +17,11 @@ export function ActivityChart() {
   const isMobileDevice = useMediaQuery("(max-width:767px)");
   const isTabletDevice = useMediaQuery("(max-width:990px)");
   const isMdeiumLargeDevice = useMediaQuery("(max-width:1100px)");
-  const barSize = (isMobileDevice && 6) || (isTabletDevice && 15) || (isMdeiumLargeDevice && 10) || 20;
+  const barSize =
+    (isMobileDevice && 6) ||
+    (isTabletDevice && 15) ||
+    (isMdeiumLargeDevice && 10) ||
+    20;
 
   return (
     <div className="p-3 bg-[#202028] mt-7 rounded-md w-full">

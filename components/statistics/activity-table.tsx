@@ -30,7 +30,7 @@ export const ActivityTable = () => {
 
   return (
     <div className="mt-7 bg-[#202028] p-5 rounded-md w-full">
-      <h1 className="text-2xl font-bold">Recent orders</h1>
+      <h1 className="text-2xl font-bold">Recent Orders</h1>
       <Table className="bg-[#202028] rounded-md">
         <TableCaption className="hidden" />
         <TableHeader>
@@ -61,7 +61,17 @@ export const ActivityTable = () => {
               </TableCell>
               <TableCell>{data.orderNo}</TableCell>
               <TableCell>{data.amount}</TableCell>
-              <TableCell className="text-right">{data.status}</TableCell>
+              <TableCell className="text-right">
+                <span
+                  className={cn(
+                    "text-xs px-2 py-[2px] rounded-ful inline-block rounded-full font-semibold text-red-400/70 bg-red-500/20",
+                    data.status === "Delivered" &&
+                      "!bg-[#1abd87]/20 !text-[#1abd87]"
+                  )}
+                >
+                  {data.status}
+                </span>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

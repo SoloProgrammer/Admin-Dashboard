@@ -66,8 +66,8 @@ body {
   @apply overflow-hidden;
 }
 .custom-scroll-bar::-webkit-scrollbar-thumb {
-  @apply !bg-white/30 rounded;
+  @apply !bg-[#a8a8a6] rounded;
 }
 .custom-scroll-bar::-webkit-scrollbar {
-  @apply !bg-transparent w-3 hidden md:block;
+  @apply !bg-transparent w-2 hidden md:block;
 }

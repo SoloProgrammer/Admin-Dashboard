@@ -23,3 +23,12 @@ export type ChartDto = {
   date: string;
   revenue: number;
 };
+
+export type FeedBack = {
+  user: {
+    name: string;
+    avatar: StaticImageData;
+  };
+  stars: number;
+  review: string;
+};
