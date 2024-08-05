@@ -1,5 +1,5 @@
-import { Navbar } from "@/components/navbar";
-import { Sidebar } from "@/components/sidebar";
+import { Navbar } from "@/components/shared/navbar";
+import { Sidebar } from "@/components/shared/sidebar";
 import { Statistics } from "@/components/statistics/statistics";
 
 const DashBoardPage = () => {

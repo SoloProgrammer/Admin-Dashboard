@@ -1,5 +1,5 @@
 import Color from "color";
-import { activities } from "./constants";
+import { activities } from "./data-constants";
 import { cn } from "@/lib/utils";
 
 export const ActivityGrid = () => {

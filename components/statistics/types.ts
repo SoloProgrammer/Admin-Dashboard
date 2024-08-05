@@ -8,6 +8,7 @@ export type Activity = {
   count: string;
   growthPercentage: number;
 };
+
 export type TableDto = {
   customer: {
     name: string;
@@ -16,4 +17,9 @@ export type TableDto = {
   orderNo: number;
   amount: string;
   status: "Delivered" | "Cancelled" | "Pending";
+};
+
+export type ChartDto = {
+  date: string;
+  revenue: number;
 };

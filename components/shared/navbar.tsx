@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Bell, Mail, Search, Settings } from "lucide-react";
 
-import Logo from "../public/logo.png";
-import Avatar from "../public/avatar.png";
+import Logo from "../../public/logo.png";
+import Avatar from "../../public/avatar.png";
 
 export const Navbar = () => {
   return (
